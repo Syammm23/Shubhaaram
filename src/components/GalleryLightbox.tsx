@@ -16,8 +16,8 @@ export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({
   if (!isOpen || !item) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#090514]/90 backdrop-blur-lg">
-      <div className="relative w-full max-w-4xl rounded-3xl bg-[#120B22] border border-[#F59E0B]/40 shadow-2xl overflow-hidden flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/90 backdrop-blur-lg">
+      <div className="relative my-auto w-full max-w-4xl max-h-[calc(100vh-1.5rem)] overflow-y-auto rounded-3xl bg-[#120B22] border border-[#F59E0B]/40 shadow-2xl flex flex-col">
         {/* Close Button */}
         <button
           type="button"
@@ -39,7 +39,7 @@ export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({
         </div>
 
         {/* Metadata Details */}
-        <div className="p-6 sm:p-8 bg-[#120B22]">
+        <div className="p-5 sm:p-8 bg-[#120B22]">
           <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
             <span
               className={`px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider ${item.badgeColor}`}
@@ -60,14 +60,14 @@ export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({
             {item.description}
           </p>
 
-          <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+          <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:justify-between">
             <span className="font-outfit text-xs text-gray-400">
               Shubhaarambh Ultra Luxury Production Archives
             </span>
             <button
               type="button"
               onClick={onClose}
-              className="px-5 py-2 rounded-full gold-btn text-[#090514] font-outfit text-xs font-bold uppercase tracking-wider cursor-pointer"
+              className="w-full sm:w-auto px-5 py-2 rounded-full gold-btn text-[#090514] font-outfit text-xs font-bold uppercase tracking-wider cursor-pointer"
             >
               Close Showcase
             </button>

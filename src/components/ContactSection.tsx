@@ -49,7 +49,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section id="contact" className="py-24 max-w-7xl mx-auto px-6">
+    <section id="contact" className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Direct Placeholders */}
         <div className="lg:col-span-5 flex flex-col justify-between">
@@ -160,7 +160,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
         {/* Right Column: Interactive Consultation Form */}
         <div className="lg:col-span-7">
-          <div className="p-8 rounded-3xl purple-glass shadow-2xl relative overflow-hidden">
+          <div className="p-5 sm:p-8 rounded-3xl purple-glass shadow-2xl relative overflow-hidden">
             <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-white mb-1">
               Plan Your Celebration
             </h3>
@@ -261,7 +261,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 <label className="font-outfit text-[11px] uppercase tracking-wider text-[#FDE68A] font-semibold block mb-1.5">
                   ESTIMATED GUEST COUNT
                 </label>
-                <div className="grid grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                   {guestCounts.map((count) => {
                     const isActive = formData.guestCount === count;
                     return (

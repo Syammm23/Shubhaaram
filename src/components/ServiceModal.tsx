@@ -20,8 +20,8 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
   if (!isOpen || !service) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#090514]/85 backdrop-blur-md">
-      <div className="relative w-full max-w-xl rounded-3xl bg-[#120B22] border border-[#F59E0B]/30 shadow-2xl p-6 sm:p-8 overflow-hidden text-left">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/85 backdrop-blur-md">
+      <div className="relative my-auto w-full max-w-xl max-h-[calc(100vh-1.5rem)] sm:max-h-[calc(100vh-2rem)] overflow-y-auto rounded-3xl bg-[#120B22] border border-[#F59E0B]/30 shadow-2xl p-5 sm:p-8 text-left">
         {/* Close Button */}
         <button
           type="button"
@@ -83,11 +83,11 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
         </div>
 
         {/* Action Buttons */}
-        <div className="flex items-center justify-between gap-4 pt-4 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 pt-4 border-t border-white/10">
           <button
             type="button"
             onClick={onClose}
-            className="px-5 py-2.5 rounded-full bg-white/5 text-gray-300 hover:text-white font-outfit text-xs font-semibold uppercase tracking-wider cursor-pointer"
+            className="w-full sm:w-auto px-5 py-2.5 rounded-full bg-white/5 text-gray-300 hover:text-white font-outfit text-xs font-semibold uppercase tracking-wider cursor-pointer"
           >
             Close Details
           </button>
@@ -95,7 +95,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
           <button
             type="button"
             onClick={() => onToggleSelect(service.id)}
-            className={`inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-outfit text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
+            className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-outfit text-xs font-bold uppercase tracking-wider transition-all cursor-pointer ${
               isSelected
                 ? 'bg-emerald-600 hover:bg-emerald-500 text-white'
                 : 'gold-btn text-[#090514]'

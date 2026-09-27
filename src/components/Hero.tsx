@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices, onOpenBooking }) 
     'https://lh3.googleusercontent.com/aida/AEtjO1XOiYRrAkRtWOgzRMQYrW5e_KBh_acXFTdO9lB1N_mUZY2-dcmOT58gthWWmp9YmGJrHvJbQTm3Bh44U2kiRdoJQ76ImEfdT_h70DmYh_9-i4zjqZfFaQjXWxrbvHOUFaufzirbE-CA8IvT2H8DfKMoD0UTB0wZKV4ZwyLL-6sm6-YwddjppblyRlexHGcuwItqNaBYOnffSa6iZdCYiOX0HsgDg3HqrfkcaSJ58QqkVAhYMoXlGXxTrA';
 
   return (
-    <section id="home" className="relative min-h-screen pt-28 pb-16 flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[680px] sm:min-h-screen pt-28 sm:pt-32 pb-10 sm:pb-16 flex items-center justify-center overflow-hidden">
       {/* Background with luxury scrims */}
       <div className="absolute inset-0 z-0 bg-[#090514]">
         {!imageError ? (
@@ -35,32 +35,32 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices, onOpenBooking }) 
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#7C3AED]/30 via-[#090514]/70 to-[#090514]" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 text-center flex flex-col items-center">
         {/* Top Tag */}
-        <div className="inline-flex items-center gap-2 px-5 py-1.5 rounded-full purple-glass mb-6 border border-[#F59E0B]/30 shadow-lg">
-          <span className="text-[#FBBF24] text-xs font-bold tracking-[0.25em] uppercase font-outfit">
+        <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-5 py-1.5 rounded-full purple-glass mb-5 sm:mb-6 border border-[#F59E0B]/30 shadow-lg">
+          <span className="text-[#FBBF24] text-[10px] sm:text-xs font-bold tracking-[0.14em] sm:tracking-[0.25em] uppercase font-outfit text-center">
             ✨ PLAN • DECORATE • CELEBRATE
           </span>
         </div>
 
         {/* Marquee Headline */}
-        <h1 className="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-wider gold-text leading-tight mb-2 drop-shadow-2xl">
+        <h1 className="font-cinzel text-[clamp(2.25rem,13vw,5rem)] sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase tracking-[0.08em] sm:tracking-wider gold-text leading-tight mb-2 drop-shadow-2xl break-words">
           Shubhaarambh
         </h1>
-        <p className="font-outfit text-sm sm:text-xl md:text-2xl font-bold tracking-[0.35em] uppercase text-[#FDE68A] mb-6 drop-shadow-md">
+        <p className="font-outfit text-xs sm:text-xl md:text-2xl font-bold tracking-[0.2em] sm:tracking-[0.35em] uppercase text-[#FDE68A] mb-5 sm:mb-6 drop-shadow-md">
           Event Management
         </p>
 
         {/* Tagline */}
-        <p className="font-playfair italic text-lg sm:text-2xl text-purple-200 font-medium mb-3">
+        <p className="font-playfair italic text-base sm:text-2xl text-purple-200 font-medium mb-3">
           “Turning Moments Into Unforgettable Experiences”
         </p>
-        <p className="font-body text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed mb-10">
+        <p className="font-body text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10">
           Complete Event Solutions for Royal Weddings, Arena Music Concerts, Grand Corporate Galas, and Bespoke Indian Celebrations.
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mb-16">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto mb-10 sm:mb-16">
           <button
             type="button"
             onClick={onExploreServices}

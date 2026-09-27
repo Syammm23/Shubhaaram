@@ -10,21 +10,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#090514]/90 backdrop-blur-xl border-b border-[#F59E0B]/20 shadow-2xl">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
         {/* Brand Zone */}
         <a href="#home" className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FBBF24]">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#090514] border border-[#FBBF24]/40 p-1.5 flex items-center justify-center shadow-lg transition-transform group-hover:scale-105">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-gradient-to-br from-[#7C3AED] to-[#090514] border border-[#FBBF24]/40 p-1.5 flex items-center justify-center shadow-lg transition-transform group-hover:scale-105">
             <svg viewBox="0 0 100 100" className="w-full h-full fill-none">
               <circle cx="50" cy="50" r="44" stroke="#FBBF24" strokeWidth="3" strokeDasharray="6 4" />
               <path d="M26 65 L74 65 L66 40 L50 52 L34 40 Z" fill="#FBBF24" />
               <circle cx="50" cy="30" r="5" fill="#FBBF24" />
             </svg>
           </div>
-          <div className="flex flex-col">
-            <span className="font-cinzel text-lg sm:text-xl font-bold tracking-widest gold-text uppercase leading-none">
+          <div className="flex min-w-0 flex-col">
+            <span className="font-cinzel text-[15px] sm:text-xl font-bold tracking-[0.12em] sm:tracking-widest gold-text uppercase leading-none truncate">
               Shubhaarambh
             </span>
-            <span className="font-outfit text-[9px] tracking-[0.3em] text-[#FBBF24] uppercase mt-0.5">
+            <span className="font-outfit text-[8px] sm:text-[9px] tracking-[0.18em] sm:tracking-[0.3em] text-[#FBBF24] uppercase mt-0.5 truncate">
               Event Management
             </span>
           </div>
@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#090514]/98 border-b border-[#F59E0B]/30 px-6 py-6 transition-all duration-300">
+        <div className="lg:hidden max-h-[calc(100vh-5rem)] overflow-y-auto bg-[#090514]/98 border-b border-[#F59E0B]/30 px-4 sm:px-6 py-5 sm:py-6 transition-all duration-300">
           <div className="flex flex-col gap-4 font-outfit text-sm uppercase tracking-wider">
             <a
               href="#home"

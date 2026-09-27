@@ -31,7 +31,7 @@ export const Services: React.FC<ServicesProps> = ({
 
   return (
     <section id="services" className="py-24 bg-[#0C0618] border-t border-[#F59E0B]/20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="px-4 py-1 rounded-full bg-[#120B22] border border-[#F59E0B]/30 text-[#FBBF24] font-outfit text-xs uppercase tracking-widest font-semibold inline-block mb-2">
@@ -121,7 +121,7 @@ export const Services: React.FC<ServicesProps> = ({
 
         {/* Selected Services Counter Bar */}
         {selectedServiceIds.length > 0 && (
-          <div className="mb-6 p-4 rounded-xl purple-glass flex items-center justify-between">
+          <div className="mb-6 p-4 rounded-xl purple-glass flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:justify-between">
             <div className="flex items-center gap-3">
               <span className="w-3 h-3 rounded-full bg-[#F59E0B] animate-ping" />
               <span className="font-outfit text-xs font-semibold text-white">
@@ -157,7 +157,7 @@ export const Services: React.FC<ServicesProps> = ({
                     </span>
                   </div>
 
-                  <h3 className="font-outfit text-base font-bold text-white mb-1.5 group-hover:text-[#FDE68A] transition-colors">
+                  <h3 className="font-outfit text-base font-bold text-white mb-1.5 break-words group-hover:text-[#FDE68A] transition-colors">
                     {service.title}
                   </h3>
 
