@@ -52,7 +52,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
     <section id="contact" className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Direct Placeholders */}
-        <div className="lg:col-span-5 flex flex-col justify-between">
+        <div className="lg:col-span-5 min-w-0 flex flex-col justify-between">
           <div>
             <span className="px-4 py-1 rounded-full bg-[#120B22] border border-[#F59E0B]/30 text-[#FBBF24] font-outfit text-xs uppercase tracking-widest font-semibold inline-block mb-2">
               START YOUR JOURNEY
@@ -159,7 +159,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         </div>
 
         {/* Right Column: Interactive Consultation Form */}
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-7 min-w-0">
           <div className="p-5 sm:p-8 rounded-3xl purple-glass shadow-2xl relative overflow-hidden">
             <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-white mb-1">
               Plan Your Celebration
