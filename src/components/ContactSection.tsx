@@ -49,14 +49,8 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section id="contact" className="relative py-20 px-4 sm:px-6 bg-[#0a0614] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0614] via-[#140a28] to-[#0a0614]" aria-hidden="true" />
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #f59e0b 1px, transparent 0)', backgroundSize: '40px 40px' }}
-        aria-hidden="true"
-      />
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <section id="contact" className="scroll-mt-24 py-20 px-4 sm:px-6 bg-[#0a0614]">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Direct Placeholders */}
         <div className="lg:col-span-5 min-w-0 flex flex-col justify-between">
           <div>
@@ -114,9 +108,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </div>
           </div>
 
-          <section className="relative isolate mt-8 py-6 px-4 bg-[#0f0a1e] rounded-2xl overflow-hidden">
+          <section className="mt-8 py-6 px-4 bg-[#0f0a1e] rounded-2xl">
             <div className="grid grid-cols-1 gap-4">
-              <div className="isolate rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5">
+              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5 min-w-0">
                 <div className="w-10 h-10 shrink-0 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -129,7 +123,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   </span>
                 </div>
               </div>
-              <div className="isolate rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex flex-col items-center justify-center gap-3">
+              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex flex-col items-center justify-center gap-3">
                 <p className="text-amber-200 font-outfit text-sm font-semibold">Watch Our Work</p>
                 <a
                   href="https://youtube.com"
@@ -147,7 +141,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
 
         {/* Right Column: Interactive Consultation Form */}
         <div className="lg:col-span-7 min-w-0">
-          <div className="p-5 sm:p-8 rounded-3xl purple-glass shadow-2xl relative overflow-hidden">
+          <div className="p-5 sm:p-8 rounded-3xl purple-glass shadow-2xl min-w-0">
             <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-white mb-1">
               Plan Your Celebration
             </h3>
