@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageSquare, MapPin, Send, Instagram, Facebook, Youtube, CheckCircle2 } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Send, Youtube } from 'lucide-react';
 import { InquiryFormData } from '../types/index.ts';
 import { servicesData } from '../data/servicesData.ts';
 
@@ -105,57 +105,38 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 </div>
               </button>
 
-              {/* Studio & Office */}
-              <div className="flex items-center gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20">
-                <div className="w-10 h-10 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
+            </div>
+          </div>
+
+          <section className="relative mt-8 py-6 px-4 bg-[#0f0a1e] rounded-2xl overflow-hidden">
+            <div className="grid grid-cols-1 gap-4">
+              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5">
+                <div className="w-10 h-10 shrink-0 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <div className="flex flex-col">
+                <div className="min-w-0 flex flex-col">
                   <span className="font-outfit text-[11px] uppercase tracking-wider text-gray-400">
                     STUDIO &amp; OFFICE
                   </span>
-                  <span className="font-outfit text-sm font-bold text-white">
+                  <span className="font-outfit text-sm font-bold text-white break-words">
                     Shubhaarambh Complex, Mumbai &amp; Jaipur Hubs
                   </span>
                 </div>
               </div>
+              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex flex-col items-center justify-center gap-3">
+                <p className="text-amber-200 font-outfit text-sm font-semibold">Watch Our Work</p>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#1a1033] border border-amber-500/30 px-6 py-3 rounded-full hover:bg-amber-500/10 transition-colors text-xs font-outfit font-semibold text-white"
+                >
+                  <Youtube className="w-4 h-4 text-red-500" />
+                  <span>YouTube</span>
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-white/10">
-            <p className="font-outfit text-xs uppercase tracking-wider text-[#FBBF24] font-semibold mb-3">
-              OFFICIAL SOCIAL BROADCASTS
-            </p>
-            <div className="flex flex-wrap gap-2 text-xs font-medium text-gray-300">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#120B22] border border-white/10 hover:border-[#FBBF24] hover:text-white transition-all"
-              >
-                <Instagram className="w-3.5 h-3.5 text-pink-400" />
-                <span>@shubhaarambhevents</span>
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#120B22] border border-white/10 hover:border-[#FBBF24] hover:text-white transition-all"
-              >
-                <Facebook className="w-3.5 h-3.5 text-blue-400" />
-                <span>Facebook</span>
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#120B22] border border-white/10 hover:border-[#FBBF24] hover:text-white transition-all"
-              >
-                <Youtube className="w-3.5 h-3.5 text-red-500" />
-                <span>YouTube</span>
-              </a>
-            </div>
-          </div>
+          </section>
         </div>
 
         {/* Right Column: Interactive Consultation Form */}
