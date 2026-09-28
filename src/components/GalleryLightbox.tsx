@@ -16,7 +16,7 @@ export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({
   if (!isOpen || !item) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/90 backdrop-blur-lg">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/90 ">
       <div className="relative my-auto w-full max-w-4xl max-h-[calc(100vh-1.5rem)] overflow-y-auto rounded-3xl bg-[#120B22] border border-[#F59E0B]/40 shadow-2xl flex flex-col">
         {/* Close Button */}
         <button

@@ -91,7 +91,7 @@ export const Gallery: React.FC<GalleryProps> = ({ onOpenLightbox }) => {
             <div className="absolute inset-0 bg-gradient-to-t from-[#090514] via-[#090514]/35 to-transparent pointer-events-none" />
 
             {/* Click to expand hover hint */}
-            <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-[#090514]/80 backdrop-blur-md border border-white/20 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-[#090514]/80 border border-white/20 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
               <Maximize2 className="w-4 h-4 text-[#FBBF24]" />
             </div>
 

@@ -20,7 +20,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({
   if (!isOpen || !service) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/85 backdrop-blur-md">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/85 ">
       <div className="relative my-auto w-full max-w-xl max-h-[calc(100vh-1.5rem)] sm:max-h-[calc(100vh-2rem)] overflow-y-auto rounded-3xl bg-[#120B22] border border-[#F59E0B]/30 shadow-2xl p-5 sm:p-8 text-left">
         {/* Close Button */}
         <button

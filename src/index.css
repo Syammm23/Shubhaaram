@@ -24,16 +24,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  /* Opaque glass replacement: avoids GPU GPU compositing glitches. */
   .purple-glass {
-    background: rgba(18, 11, 34, 0.78);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: #1a1033;
     border: 1px solid rgba(217, 119, 6, 0.25);
   }
+
   .gold-btn {
     background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
+
   .gold-btn:hover {
     box-shadow: 0 0 25px rgba(245, 158, 11, 0.6);
     transform: translateY(-2px);
@@ -55,12 +57,20 @@
 
 html {
   scroll-padding-top: 5rem;
+  overflow-x: hidden !important;
 }
 
 body {
   margin: 0;
   min-width: 320px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  background-attachment: scroll !important;
+}
+
+*,
+*::before,
+*::after {
+  background-attachment: scroll !important;
 }
 
 img,
@@ -84,21 +94,7 @@ textarea {
 
   .purple-glass,
   header {
-    background-color: rgba(9, 5, 20, 0.98) !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-
-  .purple-glass {
-    isolation: isolate;
-  }
-}
-
-@media (max-width: 768px) {
-  #contact * {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    background-attachment: scroll !important;
+    background-color: #090514 !important;
   }
 }
 
@@ -106,13 +102,16 @@ textarea {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #090514;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #311c52;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #d97706;
 }

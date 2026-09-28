@@ -33,7 +33,7 @@ export const About: React.FC = () => {
                 </div>
               )}
               <div className="absolute inset-0 bg-gradient-to-t from-[#090514] via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#090514]/90 backdrop-blur-md border border-[#F59E0B]/30 shadow-lg">
+              <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#090514]/90 border border-[#F59E0B]/30 shadow-lg">
                 <span className="font-cinzel text-xs text-[#FBBF24] font-bold uppercase tracking-wider block mb-1">
                   Uncompromising Grandeur
                 </span>

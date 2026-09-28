@@ -28,7 +28,7 @@ export const BookingConfirmationModal: React.FC<BookingConfirmationModalProps> =
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/90 backdrop-blur-md">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center overflow-y-auto p-3 sm:p-4 bg-[#090514]/90 ">
       <div className="relative my-auto w-full max-w-lg max-h-[calc(100vh-1.5rem)] overflow-y-auto rounded-3xl bg-[#120B22] border border-[#F59E0B]/40 shadow-2xl p-5 sm:p-8 text-left">
         {/* Top Close */}
         <button
