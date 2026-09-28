@@ -52,14 +52,14 @@ export default function App() {
   const scrollToServices = () => {
     const el = document.getElementById('services');
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   };
 
   const scrollToContact = () => {
     const el = document.getElementById('contact');
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   };
 

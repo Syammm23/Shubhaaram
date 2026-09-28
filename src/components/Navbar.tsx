@@ -9,7 +9,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#090514]/90 border-b border-[#F59E0B]/20 shadow-2xl">
+    <header className="sticky top-0 z-50 bg-[#090514] border-b border-[#F59E0B]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
         {/* Brand Zone */}
         <a href="#home" className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FBBF24]">
@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden max-h-[calc(100vh-5rem)] overflow-y-auto bg-[#090514]/98 border-b border-[#F59E0B]/30 px-4 sm:px-6 py-5 sm:py-6 transition-all duration-300">
+        <div className="lg:hidden max-h-[calc(100vh-5rem)] overflow-y-auto bg-[#090514] border-b border-[#F59E0B]/30 px-4 sm:px-6 py-5 sm:py-6">
           <div className="flex flex-col gap-4 font-outfit text-sm uppercase tracking-wider">
             <a
               href="#home"
