@@ -67,76 +67,38 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               Have an upcoming wedding, concert, festival, or corporate gala? Talk to our chief production directors today for a custom walkthrough and quote.
             </p>
 
-            <div className="flex flex-col gap-3.5">
-              {/* Call Us */}
-              <a
-                href="tel:+919876543210"
-                className="flex items-center gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20"
-              >
-                <div className="w-10 h-10 rounded-xl bg-[#F59E0B]/10 flex items-center justify-center text-[#FBBF24]">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-outfit text-[11px] uppercase tracking-wider text-gray-400">
-                    CALL US DIRECTLY
-                  </span>
-                  <span className="font-outfit text-sm font-bold text-white">
-                    +91 98765 43210
-                  </span>
-                </div>
+            <div className="mt-8 border-t border-white/10">
+              <a href="tel:+919876543210" className="flex items-center gap-3 py-4 border-b border-white/10">
+                <Phone className="w-5 h-5 shrink-0 text-[#FBBF24]" />
+                <span className="min-w-0">
+                  <span className="block font-outfit text-[10px] uppercase tracking-wider text-gray-400">Call us directly</span>
+                  <span className="block font-outfit text-sm font-bold text-white">+91 98765 43210</span>
+                </span>
               </a>
 
-              {/* WhatsApp */}
-              <button
-                type="button"
-                onClick={handleQuickWhatsApp}
-                className="flex items-center text-left gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20 cursor-pointer"
-              >
-                <div className="w-10 h-10 rounded-xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366]">
-                  <MessageSquare className="w-5 h-5" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-outfit text-[11px] uppercase tracking-wider text-gray-400">
-                    INSTANT WHATSAPP DESK
-                  </span>
-                  <span className="font-outfit text-sm font-bold text-white">
-                    Start Instant Chat (91 98765 43210)
-                  </span>
-                </div>
+              <button type="button" onClick={handleQuickWhatsApp} className="flex w-full items-center gap-3 py-4 border-b border-white/10 text-left">
+                <MessageSquare className="w-5 h-5 shrink-0 text-[#25D366]" />
+                <span className="min-w-0">
+                  <span className="block font-outfit text-[10px] uppercase tracking-wider text-gray-400">Instant WhatsApp Desk</span>
+                  <span className="block font-outfit text-sm font-bold text-white break-words">Start Instant Chat (91 98765 43210)</span>
+                </span>
               </button>
 
+              <div className="flex items-start gap-3 py-4 border-b border-white/10">
+                <MapPin className="w-5 h-5 shrink-0 text-pink-400" />
+                <span className="min-w-0">
+                  <span className="block font-outfit text-[10px] uppercase tracking-wider text-gray-400">Studio &amp; Office</span>
+                  <span className="block font-outfit text-sm font-bold text-white break-words">Shubhaarambh Complex, Mumbai &amp; Jaipur Hubs</span>
+                </span>
+              </div>
+
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 py-4 text-xs font-outfit font-semibold text-white">
+                <Youtube className="w-4 h-4 text-red-500" />
+                <span>Watch Our Work on YouTube</span>
+              </a>
             </div>
           </div>
 
-          <div className="mt-8 py-4 px-0">
-            <div className="grid grid-cols-1 gap-4">
-              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5 min-w-0">
-                <div className="w-10 h-10 shrink-0 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div className="min-w-0 flex flex-col">
-                  <span className="font-outfit text-[11px] uppercase tracking-wider text-gray-400">
-                    STUDIO &amp; OFFICE
-                  </span>
-                  <span className="font-outfit text-sm font-bold text-white break-words">
-                    Shubhaarambh Complex, Mumbai &amp; Jaipur Hubs
-                  </span>
-                </div>
-              </div>
-              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex flex-col items-center justify-center gap-3">
-                <p className="text-amber-200 font-outfit text-sm font-semibold">Watch Our Work</p>
-                <a
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#1a1033] border border-amber-500/30 px-6 py-3 rounded-full text-xs font-outfit font-semibold text-white"
-                >
-                  <Youtube className="w-4 h-4 text-red-500" />
-                  <span>YouTube</span>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Right Column: Interactive Consultation Form */}
