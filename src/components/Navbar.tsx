@@ -136,11 +136,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBookingModal }) => {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="tel:+919876543210"
+                href="tel:+916355790121"
                 className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full bg-[#120B22] border border-[#F59E0B]/30 text-white font-bold text-xs"
               >
                 <PhoneCall className="w-4 h-4 text-[#FBBF24]" />
-                <span>Call +91 98765 43210</span>
+                <span>Call +91 6355 790 121</span>
               </a>
             </div>
           </div>

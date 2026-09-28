@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices, onOpenBooking }) 
         </div>
 
         {/* Marquee Headline */}
-        <h1 className="font-cinzel text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold uppercase leading-[0.9] tracking-wide text-center px-4 break-words max-w-full gold-text mb-4 drop-shadow-2xl">
+        <h1 className="font-cinzel text-3xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold uppercase leading-[0.95] tracking-[0.04em] text-center px-2 break-words max-w-full gold-text mb-4 drop-shadow-2xl">
           Shubhaarambh
         </h1>
         <p className="font-outfit text-xs sm:text-xl md:text-2xl font-bold tracking-[0.2em] sm:tracking-[0.35em] uppercase text-[#FDE68A] mb-5 sm:mb-6 drop-shadow-md">
@@ -52,10 +52,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreServices, onOpenBooking }) 
         </p>
 
         {/* Tagline */}
-        <p className="font-playfair italic text-base sm:text-2xl text-purple-200 font-medium mb-3">
+        <p className="font-playfair italic text-sm sm:text-2xl text-purple-200 font-medium mb-3 px-2">
           “Turning Moments Into Unforgettable Experiences”
         </p>
-        <p className="font-body text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10">
+        <p className="font-body text-xs sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10 px-2">
           Complete Event Solutions for Royal Weddings, Arena Music Concerts, Grand Corporate Galas, and Bespoke Indian Celebrations.
         </p>
 

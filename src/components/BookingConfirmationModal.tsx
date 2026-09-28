@@ -24,7 +24,7 @@ export const BookingConfirmationModal: React.FC<BookingConfirmationModalProps> =
     const message = encodeURIComponent(
       `Hello Shubhaarambh Events!\nI have submitted my event inquiry (Ref: ${bookingRef}):\n- Name: ${inquiry.name}\n- Phone: ${inquiry.phone}\n- Event: ${inquiry.eventType}\n- Date: ${inquiry.eventDate || 'To be finalized'}\n- Guests: ${inquiry.guestCount}${servicesList}\n- Notes: ${inquiry.message || 'None'}\n\nPlease share the proposal and quotation.`
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/916355790121?text=${message}`, '_blank');
   };
 
   return (

@@ -45,7 +45,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
         formData.name || 'Valued Guest'
       }\n- Event Type: ${formData.eventType}\n- Guests: ${formData.guestCount}`
     );
-    window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+    window.open(`https://wa.me/916355790121?text=${text}`, '_blank');
   };
 
   return (
@@ -68,11 +68,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </p>
 
             <div className="mt-8 border-t border-white/10">
-              <a href="tel:+919876543210" className="flex items-center gap-3 py-4 border-b border-white/10">
+              <a href="tel:+916355790121" className="flex items-center gap-3 py-4 border-b border-white/10">
                 <Phone className="w-5 h-5 shrink-0 text-[#FBBF24]" />
                 <span className="min-w-0">
                   <span className="block font-outfit text-[10px] uppercase tracking-wider text-gray-400">Call us directly</span>
-                  <span className="block font-outfit text-sm font-bold text-white">+91 98765 43210</span>
+                  <span className="block font-outfit text-sm font-bold text-white">+91 6355 790 121</span>
                 </span>
               </a>
 
@@ -80,7 +80,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                 <MessageSquare className="w-5 h-5 shrink-0 text-[#25D366]" />
                 <span className="min-w-0">
                   <span className="block font-outfit text-[10px] uppercase tracking-wider text-gray-400">Instant WhatsApp Desk</span>
-                  <span className="block font-outfit text-sm font-bold text-white break-words">Start Instant Chat (91 98765 43210)</span>
+                  <span className="block font-outfit text-sm font-bold text-white break-words">Start Instant Chat (91 6355 790 121)</span>
                 </span>
               </button>
 
@@ -164,7 +164,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 6355 790 121"
                     className="w-full px-3.5 py-2.5 rounded-xl bg-[#090514] border border-[#7C3AED]/30 text-white text-xs placeholder-gray-500 focus:outline-none focus:border-[#FBBF24]"
                   />
                 </div>
