@@ -115,3 +115,14 @@ textarea {
 ::-webkit-scrollbar-thumb:hover {
   background: #d97706;
 }
+
+/* Keep the contact area completely static while the page is being scrolled. */
+#contact *,
+#contact *::before,
+#contact *::after {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+}
