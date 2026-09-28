@@ -49,8 +49,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <section id="contact" className="relative py-20 px-4 sm:px-6 bg-[#0a0614] overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0614] via-[#140a28] to-[#0a0614]" aria-hidden="true" />
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #f59e0b 1px, transparent 0)', backgroundSize: '40px 40px' }}
+        aria-hidden="true"
+      />
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Direct Placeholders */}
         <div className="lg:col-span-5 min-w-0 flex flex-col justify-between">
           <div>
@@ -90,7 +96,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <button
                 type="button"
                 onClick={handleQuickWhatsApp}
-                className="flex items-center text-left gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20 hover:border-[#25D366] transition-all group cursor-pointer"
+                className="isolate flex items-center text-left gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20 hover:border-[#25D366] transition-all group cursor-pointer"
               >
                 <div className="w-10 h-10 rounded-xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366] group-hover:scale-105 transition-transform">
                   <MessageSquare className="w-5 h-5" />
@@ -108,9 +114,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </div>
           </div>
 
-          <section className="relative mt-8 py-6 px-4 bg-[#0f0a1e] rounded-2xl overflow-hidden">
+          <section className="relative isolate mt-8 py-6 px-4 bg-[#0f0a1e] rounded-2xl overflow-hidden">
             <div className="grid grid-cols-1 gap-4">
-              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5">
+              <div className="isolate rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5">
                 <div className="w-10 h-10 shrink-0 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
                   <MapPin className="w-5 h-5" />
                 </div>
@@ -123,7 +129,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   </span>
                 </div>
               </div>
-              <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex flex-col items-center justify-center gap-3">
+              <div className="isolate rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex flex-col items-center justify-center gap-3">
                 <p className="text-amber-200 font-outfit text-sm font-semibold">Watch Our Work</p>
                 <a
                   href="https://youtube.com"

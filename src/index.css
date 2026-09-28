@@ -94,6 +94,14 @@ textarea {
   }
 }
 
+@media (max-width: 768px) {
+  #contact * {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-attachment: scroll !important;
+  }
+}
+
 /* Custom subtle scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
