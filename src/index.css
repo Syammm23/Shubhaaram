@@ -123,6 +123,10 @@ textarea {
   contain: layout paint style;
 }
 
+#contact {
+  contain: layout style;
+}
+
 /* One conservative mobile/coarse-pointer rendering mode for real Android browsers. */
 @media (max-width: 768px), (pointer: coarse) {
   html {
@@ -153,7 +157,8 @@ textarea {
   #contact {
     content-visibility: visible;
     contain-intrinsic-size: auto;
-    isolation: isolate;
+    contain: layout style;
+    isolation: auto;
   }
 
   #contact *,

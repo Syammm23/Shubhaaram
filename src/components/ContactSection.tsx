@@ -71,16 +71,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               {/* Call Us */}
               <a
                 href="tel:+919876543210"
-                className="flex items-center gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20 hover:border-[#FBBF24] transition-all group"
+                className="flex items-center gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#F59E0B]/10 flex items-center justify-center text-[#FBBF24] group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-xl bg-[#F59E0B]/10 flex items-center justify-center text-[#FBBF24]">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-outfit text-[11px] uppercase tracking-wider text-gray-400">
                     CALL US DIRECTLY
                   </span>
-                  <span className="font-outfit text-sm font-bold text-white group-hover:text-[#FDE68A] transition-colors">
+                  <span className="font-outfit text-sm font-bold text-white">
                     +91 98765 43210
                   </span>
                 </div>
@@ -90,16 +90,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <button
                 type="button"
                 onClick={handleQuickWhatsApp}
-                className="isolate flex items-center text-left gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20 hover:border-[#25D366] transition-all group cursor-pointer"
+                className="flex items-center text-left gap-3.5 p-4 rounded-xl bg-[#120B22] border border-[#F59E0B]/20 cursor-pointer"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366] group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366]">
                   <MessageSquare className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
                   <span className="font-outfit text-[11px] uppercase tracking-wider text-gray-400">
                     INSTANT WHATSAPP DESK
                   </span>
-                  <span className="font-outfit text-sm font-bold text-white group-hover:text-[#25D366] transition-colors">
+                  <span className="font-outfit text-sm font-bold text-white">
                     Start Instant Chat (91 98765 43210)
                   </span>
                 </div>
@@ -108,7 +108,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             </div>
           </div>
 
-          <section className="mt-8 py-6 px-4 bg-[#0f0a1e] rounded-2xl">
+          <div className="mt-8 py-4 px-0">
             <div className="grid grid-cols-1 gap-4">
               <div className="rounded-2xl border border-amber-500/20 p-5 bg-[#1a1033] flex items-center gap-3.5 min-w-0">
                 <div className="w-10 h-10 shrink-0 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
@@ -129,19 +129,19 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   href="https://youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#1a1033] border border-amber-500/30 px-6 py-3 rounded-full hover:bg-amber-500/10 transition-colors text-xs font-outfit font-semibold text-white"
+                  className="inline-flex items-center gap-2 bg-[#1a1033] border border-amber-500/30 px-6 py-3 rounded-full text-xs font-outfit font-semibold text-white"
                 >
                   <Youtube className="w-4 h-4 text-red-500" />
                   <span>YouTube</span>
                 </a>
               </div>
             </div>
-          </section>
+          </div>
         </div>
 
         {/* Right Column: Interactive Consultation Form */}
         <div className="lg:col-span-7 min-w-0">
-          <div className="p-5 sm:p-8 rounded-3xl purple-glass shadow-2xl min-w-0">
+          <div className="p-5 sm:p-8 rounded-3xl purple-glass min-w-0">
             <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-white mb-1">
               Plan Your Celebration
             </h3>
